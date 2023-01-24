@@ -23,7 +23,6 @@ def greeter():
         When you want to exit, you must stop the iteration
 
     ~ AdonNeet
-
     =============================    
     """)
 
@@ -68,15 +67,3 @@ while True:
             break
         else:
             continue
-
-
-"""
-# to check countdown function
-countdown(int(10))
-"""
-"""
-while True: # check pressed key
-    print(key.read_key())
-    if key.read_key() == "a":
-        break
-"""
