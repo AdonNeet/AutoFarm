@@ -4,7 +4,7 @@ import random as r
 import pyautogui
 
 # yeah, for spam text in farming act, edit as you want
-spam = ['tes', '123', 'qwerty', 'aoaoao', 'konnichiwa', 'lagi farming xp', 'hallo, saya afk', 'lagi turu']
+spam = ['tes, lagi farming xp', '123, uhuy', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'lagi farming xp', 'hallo, saya afk', 'semangat, besok masiha ada hari']
 
 
 stop = False    # as boolean detector when iteration stopped
@@ -56,7 +56,7 @@ while True:
                     count += 1
                     pyautogui.write(r.choice(spam))
                     pyautogui.press('enter')
-                    print('>> {:02d}th iteration done'.format(count))
+                    print('info : {}th iteration done'.format(count))
         elif(key.is_pressed('esc')):
             print('>> Exit from program')
             break
