@@ -3,11 +3,13 @@ import time as t
 import random as r
 import pyautogui
 
+username = 'AdonNeet#xxxx' # change into your username
+
 ## yeah, for spam text in farming act, edit as you want
-#spam = ['tes, lagi farming xp', '123, uhuy', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'lagi farming xp', 'hallo, saya afk', 'semangat, besok masiha ada hari']
-## yeah, its for koya command spam :D
-username = 'AdonNeet#'
-spam = 'koya slap @{}'.format(username)
+spam = ['koya slap @{user}'.format(user=username), 'tes, lagi farming xp', '123, uhuy', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'lagi farming xp', 'hallo, saya afk', 'semangat, besok masiha ada hari']
+
+## yeah, its for koya or antoher command spam :D
+#spam = 'koya slap @{user}'.format(user=username) # it is for koya
 
 stop = False    # as boolean detector when iteration stopped
 
