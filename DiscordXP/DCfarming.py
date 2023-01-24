@@ -3,9 +3,11 @@ import time as t
 import random as r
 import pyautogui
 
-# yeah, for spam text in farming act, edit as you want
-spam = ['tes, lagi farming xp', '123, uhuy', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'lagi farming xp', 'hallo, saya afk', 'semangat, besok masiha ada hari']
-
+## yeah, for spam text in farming act, edit as you want
+#spam = ['tes, lagi farming xp', '123, uhuy', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'lagi farming xp', 'hallo, saya afk', 'semangat, besok masiha ada hari']
+## yeah, its for koya command spam :D
+username = 'AdonNeet#'
+spam = 'koya slap @{}'.format(username)
 
 stop = False    # as boolean detector when iteration stopped
 
@@ -32,11 +34,12 @@ def countdown(waktu):
             global stop
             stop = True 
             print('>> Farming berhenti')
-            break   
-        timer = '{:02d} second'.format(waktu)
-        print(timer, end="\r")
-        t.sleep(1)
-        waktu -= 1
+            break
+        else:   
+            timer = '{:02d} second'.format(waktu)
+            print(timer, end="\r")
+            t.sleep(1)
+            waktu -= 1
 
 # greeter
 greeter()
