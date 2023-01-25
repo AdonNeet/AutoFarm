@@ -3,15 +3,15 @@ import time as t
 import random as r
 import pyautogui
 
-username = 'AdonNeet#xxxx' # change into your username
+username = 'Adon_Neet#xxxx' # change into your username
 
 ## yeah, for spam text in farming act, edit as you want
-spam = ['koya slap @{user}'.format(user=username), 'tes, lagi farming xp', '123, uhuy', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'lagi farming xp', 'hallo, saya afk', 'semangat, besok masiha ada hari']
+spam = ['koya slap @{user}'.format(user=username), 'owo slap @{user}'.format(user=username), 'tes, lagi farming xp', '123, spontan, uhuy', 'dvorak', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'turu, besok masih bisa di lanjut', 'hallo, saya afk', 'semangat, besok masih ada hari']
 
 ## yeah, its for koya or antoher command spam :D
 #spam = 'koya slap @{user}'.format(user=username) # it is for koya
 
-stop = False    # as boolean detector when iteration stopped
+stop = False    # as boolean detector when iteration stopped, global scope
 
 def greeter():
     print("""
@@ -52,7 +52,7 @@ while True:
             print('>> Start the farming')
             count = 0 # as iteration counter, local scope
             while True:
-                countdown(int(r.randint(70, 90)))  # min 60, but 70 till 90 for avoiding ban (or random it)
+                countdown(int(r.randint(60, 65)))  # min 60, 60-70 for avoiding ban (or random it)
                 if(stop == True):
                     stop = False
                     break
