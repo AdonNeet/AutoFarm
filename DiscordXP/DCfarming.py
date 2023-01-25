@@ -19,9 +19,9 @@ def greeter():
     Welcome to cheat XP Discord program
     
     How to use:
-        press P     : start
-        push Q      : stop the iteration (when started)
-        press esc   : exit from program
+        Press P           : start
+        Ctrl + Q  (push)  : stop the iteration (when started)
+        press esc         : exit from program
 
     Note:
         When you want to exit, you must stop the iteration
@@ -30,12 +30,16 @@ def greeter():
     =============================    
     """)
 
+def message(ans):
+    pyautogui.write(ans)
+    pyautogui.press('enter')
+
 def countdown(waktu): 
     while waktu > 0:
-        if(key.is_pressed('q')):
+        if(key.is_pressed('q') and key.is_pressed('ctrl')):
             global stop
             stop = True 
-            print('>> Farming berhenti')
+            print('>> Farming stopped')  
             break
         else:   
             timer = '{:02d} second'.format(waktu)
@@ -58,8 +62,7 @@ while True:
                     break
                 else:
                     count += 1
-                    pyautogui.write(r.choice(spam))
-                    pyautogui.press('enter')
+                    message(r.choice(spam))
                     print('info : {}th iteration done'.format(count))
         elif(key.is_pressed('esc')):
             print('>> Exit from program')
