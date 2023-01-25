@@ -3,7 +3,7 @@ import time as t
 import random as r
 import pyautogui
 
-username = 'Adon_Neet#xxxx' # change into your username
+username = 'Adon_Neet#1973' # change into your username
 
 ## yeah, for spam text in farming act, edit as you want
 spam = ['koya slap @{user}'.format(user=username), 'owo slap @{user}'.format(user=username), 'tes, lagi farming xp', '123, spontan, uhuy', 'dvorak', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'turu, besok masih bisa di lanjut', 'hallo, saya afk', 'semangat, besok masih ada hari']
@@ -53,7 +53,7 @@ greeter()
 while True:
     try:
         if(key.is_pressed('p')):
-            print('>> Start the farming')
+            print('\n>> Start the farming')
             count = 0 # as iteration counter, local scope
             while True:
                 countdown(int(r.randint(60, 65)))  # min 60, 60-70 for avoiding ban (or random it)
