@@ -3,10 +3,11 @@ import time as t
 import random as r
 import pyautogui
 
-username = 'Adon_Neet#1973' # change into your username
+# username = 'Adon_Neet#1973' # change into your username
 
 ## yeah, for spam text in farming act, edit as you want
-spam = ['koya slap @{user}'.format(user=username), 'owo slap @{user}'.format(user=username), 'tes, lagi farming xp', '123, spontan, uhuy', 'dvorak', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'turu, besok masih bisa di lanjut', 'hallo, saya afk', 'semangat, besok masih ada hari']
+# spam = ['koya slap @{user}'.format(user=username), 'owo slap @{user}'.format(user=username), 'tes, lagi farming xp', '123, spontan, uhuy', 'dvorak', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'turu, besok masih bisa di lanjut', 'hallo, saya afk', 'semangat, besok masih ada hari']
+spam = ['Ole ole ole ole... ole', 'Tes, 1 2 3', 'Hallo, konnichiwa!', 'tes, lagi farming xp', '123, spontan, uhuy', 'dvorak', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'turu, besok masih bisa di lanjut', 'hallo, saya afk', 'semangat, besok masih ada hari']
 
 ## yeah, its for koya or antoher command spam :D
 #spam = 'koya slap @{user}'.format(user=username) # it is for koya
