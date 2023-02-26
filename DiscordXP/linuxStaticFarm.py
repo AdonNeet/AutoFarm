@@ -3,14 +3,8 @@ import time as t
 import random as r
 import pyautogui as pt
 
-# username = 'Adon_Neet#1973' # change into your username
-
-## yeah, for spam text in farming act, edit as you want
-# spam = ['koya slap @{user}'.format(user=username), 'owo slap @{user}'.format(user=username), 'tes, lagi farming xp', '123, spontan, uhuy', 'dvorak', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'turu, besok masih bisa di lanjut', 'hallo, saya afk', 'semangat, besok masih ada hari']
+## yeah, for spam text in farming act, edit as you want (short msg, OK!)
 spam = ['Ole ole ole ole... ole', 'Tes, 1 2 3', 'Hallo, konnichiwa!', 'tes, lagi farming xp', '123, spontan, uhuy', 'dvorak', 'qwerty', 'aoaoao, esok masih ada hari', 'konnichiwa', 'turu, besok masih bisa di lanjut', 'hallo, saya afk', 'semangat, besok masih ada hari']
-
-## yeah, its for koya or antoher command spam :D
-#spam = 'koya slap @{user}'.format(user=username) # it is for koya
 
 stop = False    # as boolean detector when iteration stopped, global scope
 
@@ -20,7 +14,7 @@ stop = False    # as boolean detector when iteration stopped, global scope
 def greeter():
     print("""
     =============================
-    Welcome to cheat XP Discord program
+    Welcome to cheat XP Discord program (static for linux)
     
     How to use:
         Press P           : start
@@ -29,8 +23,8 @@ def greeter():
 
     Note:
         - It's automatically delete your own msg
+        - Use discord at right side block
         - When you want to exit, you must stop the iteration
-
 
     ~ AdonNeet
     =============================    
@@ -38,11 +32,12 @@ def greeter():
 
 
 # the nav to image method, and do the job
+# on linux 1871, 904 (discord blocking in right side)
 def delete():
-    try:
-        #
-    except:
-        #
+    pt.keyDown('shift')
+    pt.moveTo(1871, 904, duration=0.001)
+    pt.click()
+    pt.keyUp('shift')
 
 
 # the msg method
@@ -71,7 +66,7 @@ while True:
     try:
         if(key.is_pressed('p')):
             print('\n>> Start the farming')
-            count = 0 # as iteration counter, local scope
+            count = 0 # as iteration counter, local scope            
             while True:
                 countdown(int(r.randint(60, 65)))  # min 60, 60-70 for avoiding ban (or random it)
                 if(stop == True):

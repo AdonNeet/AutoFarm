@@ -1,26 +1,28 @@
 import pyautogui as pt
+import keyboard as k
+import time as t
 
-def nav_to(a, b):
+# on linux 1871, 904 (discord blocing in rght side)
+def nav_to():
     try:
-        post_user = pt.locateOnScreen(a)
-        pt.moveTo(post_user[0]+15, post_user[1]+15, duration=.001)
-        pt.rightClick()
-        del_msg = pt.locateOnScreen(a)
-        pt.moveTo(post_user[0]+15, post_user[1]+15, duration=.001)
+        pt.keyDown('shift')
+        pt.moveTo(1871, 904, duration=0.001)
         pt.click()
-        pt.press('enter')
+        pt.keyUp('shift')
+        return 1
     except:
-        print('Gambar tidak ditemukan')
+        print('Fail')
         return 0
 
 # main 
 if __name__ == '__main__':
     try: 
-        user_png = 'image/user.png'
-        del_png = 'image/delete_msg.png'
-        nav_to(user_png, del_png)
-        print('Kode berhasil')
-        exit()
+        t.sleep(5)
+        if(nav_to() == 1):
+            print('Berhasil di Run')
+            exit()
+        else: 
+            print('Ada sesuatu yang bermasalah')
     except:
         print('Kode gagal')
         exit()
